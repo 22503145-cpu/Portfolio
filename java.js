@@ -5,7 +5,7 @@ import { CSS3DRenderer, CSS3DObject } from 'three/addons/renderers/CSS3DRenderer
 // PROVA DE VERSÃO (temporário): se o título da aba do navegador NÃO virar isto assim que a página
 // carregar, o navegador está rodando um java.js em cache antigo — nenhuma mudança de código consertará
 // nada até isso ser resolvido (Ctrl+Shift+R, ou aba anônima, ou fechar e abrir a aba de novo).
-document.title = 'JAVA.JS v15 CARREGADO';
+document.title = 'Portfolio';
 
 // ===== Configurações do jogador =====
 const moveSpeed = 1.5;                   // metros por segundo "equivalentes"; escalado automaticamente para o tamanho real do setup.glb
@@ -915,11 +915,11 @@ loader.load(
         try {
             setupMonitorInteraction(model);
             document.title = monitorReady
-                ? 'JAVA.JS v15 — monitor OK'
-                : 'JAVA.JS v15 — MONITOR NAO ENCONTRADO';
+                ? 'Portfolio'
+                : 'Portfolio';
         } catch (erroMonitor) {
             console.error('[Computador] ERRO dentro de setupMonitorInteraction:', erroMonitor);
-            document.title = 'ERRO NO MONITOR: ' + erroMonitor.message;
+            document.title = 'Portfolio' + erroMonitor.message;
         }
         console.log('[Computador] monitor encontrado?', monitorReady);
 
